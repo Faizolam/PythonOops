@@ -74,12 +74,12 @@ The directory structure is organized as follows:
 
 - **`projBMSystem.py`**: Bakery Management System 
 - **`projCurrConv.py`**: Currency Converter
-- **`projRectangle.py`**: Rectangle Operations
 - **`projectCcy.py`**: Currency Abbreviation Utility
 - **`projectIrctc.py`**: Railway Ticket Booking
 - **`projectLength.py`**: Length Conversion
 - **`projectTicketBooking.py`**: Ticket Booking System
-
+- **`projLibraryManagementSystem.py`**: Library Management System
+- **`projUniversityCourseEnrollmentSystem.py`**: University Course Enrollment System
 ---
 
 ### Additional Resources
