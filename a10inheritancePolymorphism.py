@@ -1,6 +1,6 @@
 
 ##@ Method Overloading
-# #  Method overloading is a concept of Java in which we can create multiple methods of the same name in the same class, and all methods work in different ways. When more than one method of the same name is created in a Class, this type of method is called the Overloaded Method. But in the python class dose not support multiple method with the same name.
+##~  Method overloading is a concept of Java in which we can create multiple methods of the same name in the same class, and all methods work in different ways. When more than one method of the same name is created in a Class, this type of method is called the Overloaded Method. But in the python class dose not support multiple method with the same name.
 
 # class Geometry:
 
@@ -13,7 +13,7 @@
 # obj = Geometry()
 # print(obj.area(4)) # error becz same name method
 
-## But below is a trick for overloading in python.
+##* But below is a trick for overloading in python.
 
 # class Geometry:
 
@@ -32,7 +32,7 @@
 ##@ Operator Overloading
 ##~ Operator overloading in Python allows you to define custom behavior for operators (+, -, *, /, etc.) when they are used with instances of your own classes. This feature enables you to define how operators should work with your objects, making your code more expressive and intuitive.
 
-# # Here's a basic example of operator overloading in Python:
+## Here's a basic example of operator overloading in Python:
 
 # class Point:
 #     def __init__(self, x, y):

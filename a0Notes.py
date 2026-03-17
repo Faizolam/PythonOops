@@ -1,4 +1,4 @@
- ## @A data type is a class and a variable created using that data type is an object of that class.
+ ## @A data type is a class, and a variable created using that data type is an object of that class.
                 #!               class
                 #!        _________|__________ 
                 #!    ____|________    ______|________
@@ -36,7 +36,7 @@ len(L) #--> len is a function
 #!              |                     |
 #!              |_____________________|
 
-# Public Members
+#~ Public Members
 # Public members are accessible from anywhere in the code, including from outside the class. In Python, public members are those that do not have any special prefix. For example:
 class Geek:
     def __init__(self, name, age):
@@ -47,7 +47,7 @@ class Geek:
         print("Age: ", self.geekAge)
 # In this example, geekName and geekAge are public attributes, and displayAge is a public method. They can be accessed and used from anywhere in the code 2.
 
-# Private Members
+#~ Private Members
 # Private members are intended to be hidden from outside access. In Python, private members are denoted by a double underscore prefix (__). For example:
 class Geek:
     def __init__(self, name, roll, branch):

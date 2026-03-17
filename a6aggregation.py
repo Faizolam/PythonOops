@@ -1,7 +1,7 @@
 # When you constructing a large-scale application, it involves the creation of numerous classes, each with distinct relationships to one another.
 
         #!                      Relationship
-        #!       ____________________|___________________             
+        #!        ___________________|___________________             
         #!  ______|_________________       _____________|________
         #!  |   Aggregation        |       |      Inheritance   | 
         #!  |   Has-A Relationship |       |  Is-A Relationship |

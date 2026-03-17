@@ -191,7 +191,7 @@ class Atm:
 # Pin set successfully!
 # <a1atm.Atm object at 0x0000014500BE0040>
 
-# Above o/p showing a object is created at this memory location <a1atm.Atm object at 0x0000014500BE0040>, but you can't use this object because at that point you created this object you did not store in any variable and because of that this object lost you can't find this in memory.
+# Above o/p showing an object is created at this memory location <a1atm.Atm object at 0x0000014500BE0040>, but you can't use this object because at that point you created this object you did not store in any variable and because of that this object lost you can't find this in memory.
 # Whenever you create a object you write this 
 # sbi = Atm() --> So here object will be Atm() and we stores object reference in the sbi variable
  

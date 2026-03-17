@@ -99,14 +99,14 @@ class Atm:
 #   File "<stdin>", line 1, in <module>
 # TypeError: Atm.get_counter() missing 1 required positional argument: 'self'
 
-#In this error get_counter() expecting self, means it expecting any object but trying to get counter by className.get_counter, But in the code method get_counter and set_counter we don't require self because we are not using self in side the method we just need class name.
-#So When you making such a function which deals with your static variable than we don't pass self, for this use we use keyword @staticmethod and that type of are called static method.
+# In this error get_counter() expecting self, means it expecting any object but trying to get counter by className.get_counter, But in the code method get_counter and set_counter we don't require self because we are not using self in side the method we just need class name.
+#* So When you making such a function which deals with your static variable than we don't pass self, for this use we use keyword @staticmethod and that type of are called static method.
 
 
 
 
 #~ A good explaination of Staticmethod
-# The `@staticmethod` decorator in Python is used to define a method in a class that doesn’t require access to the instance (`self`) or class (`cls`) objects. It essentially acts as a standalone function within the class, which can be useful for utility methods that logically belong to the class but don’t operate on instance-specific data.
+# The `@staticmethod` decorator in Python is used to define a method in a class that doesn’t require access to the instance (`self`) or class (`cls`) objects. It essentially acts as a standalone function within the class, which can be useful for utility methods that logically belongs to the class but don’t operate on instance-specific data.
 
 # Here’s an example of how to use `@staticmethod` within the `Customer` class:
 

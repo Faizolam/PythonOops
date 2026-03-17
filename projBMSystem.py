@@ -1,4 +1,4 @@
-# custName,orderId,order,orderQut,orderDate all can stor and if needed export in csv and if needed customer can update or change and only orderId can fetch all details of order.
+# custName,orderId,order,orderQut,orderDate all can store and if needed export in csv and if needed customer can update or change and only orderId can fetch all details of order.
 import pandas as pd
 from datetime import datetime
 class Bakery:

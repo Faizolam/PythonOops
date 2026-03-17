@@ -29,7 +29,7 @@
 # 1646715339056
 # >>> 
 
-#~ conclusion: if you can give to your function a list, int, tuple, dict than you can also pass a object of class inside the function b/c everything is object in python. 
+#~ conclusion: if you can give to your function a list, int, tuple, dict than you can also pass an object of class inside the function b/c everything is an object in python. 
 # ---------------------------------------------------------------------
 
 class Customer:
@@ -38,7 +38,7 @@ class Customer:
         self.name=name
 
  #function 
- # if you pass a object in a function and if function edited the object then changes will reflect in the original object  
+ # if you pass an object in a function and if function edited the object then changes will reflect in the original object  
 def greet(customer):
     print(id(customer))
     customer.name="Faiz" 
@@ -91,4 +91,4 @@ print(T1)
 change(T1)
 print(T1)
 
-# pass by reference jo hota hai uske through mutable data type, including objects ko bhejo ge to original wale me changes ho jayege agr immutable wale ko bhej ge to original me changes nhi hogi, see above eg: List mutable and Tuple immutable.
+# pass by reference jo hota hai uske through mutable data type, including objects ko bhejoge to original wale me changes ho jayege agr immutable wale ko bhejoge to original me changes nhi hogi, see above eg: List mutable and Tuple immutable.

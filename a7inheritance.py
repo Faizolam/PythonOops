@@ -15,7 +15,7 @@
                 #     |-->Renew                      |-->Answer                                |-->Enroll                   |-->Create     |
                 #     |                              |                                         |-->Renew                    |-->Answer     |
 
-#Inheritance always happen in upper direction means you can inherite from User to Student and Instructor but you can't inheriate from Student and Instructor to User.
+# Inheritance always happen in upper direction means you can inherite from User to Student and Instructor but you can't inheriate from Student and Instructor to User.
 
 
 #? What we can inherite form parent to child class?
@@ -109,7 +109,7 @@
 #     def __init__(self, price, brand, camera) -> None:
 #         print("Inside phone constructor")
 #         self.price = price
-#         self.__brand = brand #Private attribute or hiden members can not inheritable by child class object
+#         self.__brand = brand # Private attribute or hiden members can not inheritable by child class object
 #         self.camera = camera
 
 # class SmartPhone(Phone):

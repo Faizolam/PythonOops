@@ -238,3 +238,31 @@
 # # Call the greet method of class D
 # d = D()
 # print(d.greet())  # Output: Hello from B
+
+
+#? first show a real example and based on that example define,  regular instance, @staticmethod and @classmethod in simple and easy words
+
+
+#! Inheritance is an object-oriented programming (OOP) mechanism that allows a new class (subclass or child) to acquire the properties and behaviors of an existing class (superclass or parent). 
+
+#~ Types of Inheritance
+#1. Single Level Inheritance
+    # Definition: A derived class inherits from only one base class.
+    # Key Concept: It establishes a direct one-to-one relationship between a parent and a child class.
+    # Example: A Dog class inheriting from an Animal class.
+#2. Multi-level Inheritance
+    # Definition: A class is derived from another derived class, creating a chain of inheritance.
+    # Key Concept: It involves multiple layers where each level contains a base class and a derived class (e.g., Grandparent → Parent → Child).
+    # Example: A BabyDog class inherits from Dog, which in turn inherits from Animal.
+#3. Hierarchical Inheritance
+    # Definition: More than one child class inherits from the same single parent class.
+    # Key Concept: This forms a tree-like structure where multiple independent classes share common behaviors from a root class.
+    # Example: Both Dog and Cat classes inheriting from a single Animal class.
+#4. Multiple Inheritance
+    # Definition: A single derived class inherits directly from two or more parent classes.
+    # Key Concept: It allows a class to combine features from several existing classes. Note that while C++ and Python support this, Java does not support it directly through classes.
+    # Example: A Child class inheriting from both Parent1 and Parent2.
+#5. Hybrid Inheritance
+    # Definition: A combination of two or more types of inheritance within a single program.
+    # Key Concept: It often involves a mix of multiple, hierarchical, or multilevel structures.
+    # Example: A structure where Child1 and Child2 inherit from Parent (Hierarchical), and then GrandChild inherits from both Child1 and Child2 (Multiple).
