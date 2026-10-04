@@ -5,7 +5,7 @@
                 #!    | Data or   |    | Function or |
                 #!    | property  |    | Behavior    |
                 #!    |___________|    |_____________|
-
+# Class is a user defined blueprint or template used to create objects. It bundles data(attributes) and behavior(methods) into a single logical unit, allowing you to create your own custome data types.  
 
 ## @Object: Object is an instance of the class
 #? class         Object           Create objects in python
@@ -89,3 +89,10 @@ dog.my_method() # Prints "I am a Dog"
 
 # In summary, while functions and methods in Python may appear similar, the key difference lies in their association with objects and classes. Functions are standalone, whereas methods are tied to a class and operate on the data of an instance of that class
 
+#~ Every data type in Python is a class, and when you create a variable of that data type, you are creating an object of that class. For example:
+# • num = 5 → Python sees the whole number and implicitly calls the class constructor: num = int(5).
+# • text = "Hello" → Python sees the quotation marks and implicitly calls: text = str("Hello").
+# • my_dict = {"a": 1} → Python sees the curly braces with key-value pairs and implicitly calls: my_dict = dict({"a": 1}).
+#* Literal Syntax vs. Explicit Constructors
+# Writing 5, "Hello", or [] is known as using literal syntax. Python provides literals as a shorthand so you don't have to type out the class names (int(), str(), list()) every single time, instead it automatically creates the object of that class and calls the constructor.
+# Both methods do the exact same thing under the hood: they create a new object instance of that specific class.

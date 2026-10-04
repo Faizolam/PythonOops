@@ -1,8 +1,9 @@
 class Atm:
     #48:00min
-    # __init__ :The constructor is a method that is called when an object is created. constructor run the code automatically when object create. 
+    # __init__ :The constructor is a method that is called when an object is created. constructor run the code automatically when object create. and it is used to initialize the attributes of the class. 
+    # In Python, the constructor is defined using the __init__() method. It takes self as the first parameter, which refers to the instance of the class being created. Additional parameters can be added to the constructor to accept values for initializing the object's attributes. 
     #? What is an Instance Variable in Python? 
-    # If the value of a variable varies from object to object, then such variables are called instance variables. For every object, a separate copy of the instance variable will be created. Instance variables are not shared by objects.
+    # If the value of a variable varies from object to object, then such variables are called instance variables. For every object, a separate copy of the instance variable will be created. They are define inside the class consturctor using self. Instance variables are not shared by objects.
     def __init__(self) -> None:
         #atributes
         self.__pin=""  #encapsulation (__variable)
@@ -74,7 +75,8 @@ class Atm:
         else:
             print("Invalid pin ")
 
-## @Self
+## @Self 
+#~• Self is a reference variable that refers to the current instance of the class. It is used to access the attributes and methods of the class within its own methods. When you create an object of a class and call its methods, self allows you to refer to that specific object and its data.
 #56:00min Self
 
 # from a1atm import Atm 
@@ -137,6 +139,8 @@ class Atm:
 # Instance variables are useful for storing and managing the state of individual objects created from a class.
 
 # ? Need for encapsulation
+#~ Encapsulation is a fundamental concept in object-oriented programming (OOP) that involves bundling data (attributes) and methods (functions) that operate on that data into a single unit, typically a class. The primary purpose of encapsulation is to restrict direct access to an object's internal state and provide controlled access through well-defined interfaces. This helps maintain the integrity of the object's data and prevents unintended interference from external code.
+
 # But you can't leave your data member publiclly you have to hide. using (__)
 # For eg.  
 # self.__pin=""  #encapsulation (__variable)
@@ -177,6 +181,10 @@ class Atm:
 
 
 #? reference variable
+#~ A reference variable is a variable that holds the memory address of an object. It does not contain the object itself; it points to the place in computer memory where the object is stored. You use it to "call" the object and interact with its methods and instance variables.
+# It means multiple reference variable can point to the same object in memory.
+#eg: >>> sbi = Atm() sbi is a reference variable which is pointing to the object created by Atm() class.
+
 # >>> Atm()
 # 1395876823104
 
