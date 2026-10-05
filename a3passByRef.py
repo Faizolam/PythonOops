@@ -1,23 +1,26 @@
-# class Customer:
+# Python does not have pass by value or pass by reference. Instead, it uses a mechanism called "pass by object reference" or "pass by assignment". This means that when you pass an object to a function, you are passing a reference to the object, not a copy of the object.
 
-#     def __init__(self, name, gender) -> None:
-#         self.name=name
-#         self.gender=gender 
-#  #function   
-# def greet(customer):
-#     if customer.gender=="Male":
-#         print("Hello", customer.name, "Sir!")
-#     else:
-#         print("Hello", customer.name, "Ma'am!")
+##~ Pass by reference in python is a concept where when you pass an object to a function, the function receives a reference to the original object, rather than a copy of the object. This means that if the function modifies the object, those changes will be reflected in the original object outside of the function.
+class Customer:
 
-#     cust2=Customer("Faiz","Male")
-#     return cust2
+    def __init__(self, name, gender) -> None:
+        self.name=name
+        self.gender=gender 
+ #function   
+def greet(customer):
+    if customer.gender=="Male":
+        print("Hello", customer.name, "Sir!")
+    else:
+        print("Hello", customer.name, "Ma'am!")
 
-# cust= Customer("Heena", "Female")
-# # print(cust.name)
-# # greet(cust)
-# new_cust=greet(cust)
-# print(new_cust.name)
+    cust2=Customer("Faiz","Male")
+    return cust2
+
+cust= Customer("Heena", "Female")
+# print(cust.name)
+# greet(cust)
+new_cust=greet(cust)
+print(new_cust.name)
 # ----------------------------------------------------------------------
 #~ cust is a refernce variable that storing reference address of actual object.
 # pass by reference work like this
@@ -30,27 +33,28 @@
 # >>> 
 
 #~ conclusion: if you can give to your function a list, int, tuple, dict than you can also pass an object of class inside the function b/c everything is an object in python. 
-# ---------------------------------------------------------------------
 
-class Customer:
+# # ---------------------------------------------------------------------
 
-    def __init__(self, name) -> None:
-        self.name=name
+# class Customer:
 
- #function 
- # if you pass an object in a function and if function edited the object then changes will reflect in the original object  
-def greet(customer):
-    print(id(customer))
-    customer.name="Faiz" 
-    print(customer.name)
-    print(id(customer))
+#     def __init__(self, name) -> None:
+#         self.name=name
+
+#  #function 
+#  # if you pass an object in a function and if function edited the object then changes will reflect in the original object  
+# def greet(customer):
+#     print(id(customer))
+#     customer.name="Faiz" 
+#     print(customer.name)
+#     print(id(customer))
     
-cust= Customer("Heena") #original object
-print(id(cust))
+# cust= Customer("Heena") #original object
+# print(id(cust))
 
-greet(cust)
-print(cust.name)
-print('---------------------------------------------------------------------------')
+# greet(cust)
+# print(cust.name)
+# print('---------------------------------------------------------------------------')
 
 #class ke objects are also mutable like lists, dict and sets.
 #edit krne ke bad v addr wahi hota jo pahle tha it's shows the data type is mutable
@@ -62,33 +66,33 @@ print('-------------------------------------------------------------------------
 
 
 
-def change(L):
-    print(id(L))
-    L.append(5)
-    print(L)
-    print(id(L))
+# def change(L):
+#     print(id(L))
+#     L.append(5)
+#     print(L)
+#     print(id(L))
 
-L1=[1,2,3,4]
-print(id(L1))
-print(L1)
+# L1=[1,2,3,4]
+# print(id(L1))
+# print(L1)
 
-# change(L1)
-change(L1[:]) #cloning([:]): do cloning if you don't want to get changes in you original list.
-print(L1)
-print("----------------------------------------------------------------------")
+# # change(L1)
+# change(L1[:]) #cloning([:]): do cloning if you don't want to get changes in you original list.
+# print(L1)
+# print("----------------------------------------------------------------------")
 
 
-def change(T):
-    print(id(T))
-    T=T+(5,6)
-    print(T)
-    print(id(T))
+# def change(T):
+#     print(id(T))
+#     T=T+(5,6)
+#     print(T)
+#     print(id(T))
 
-T1=(1,2,3,4)
-print(id(T1))
-print(T1)
+# T1=(1,2,3,4)
+# print(id(T1))
+# print(T1)
 
-change(T1)
-print(T1)
+# change(T1)
+# print(T1)
 
 # pass by reference jo hota hai uske through mutable data type, including objects ko bhejoge to original wale me changes ho jayege agr immutable wale ko bhejoge to original me changes nhi hogi, see above eg: List mutable and Tuple immutable.

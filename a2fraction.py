@@ -1,3 +1,4 @@
+# Fraction class is a class that represents a fraction with a numerator and denominator. It provides methods for adding, subtracting, multiplying, and dividing fractions.
 class Fraction:
     def __init__(self, n, d) -> None:
         self.num = n
@@ -50,7 +51,7 @@ class Fraction:
 # >>print(x+y)
 # >>TypeError:unsupported operand type(s) for +: 'Fraction' and 'Fraction'
 
-#* Here you did not tell how will your 2 object will 
+#* Here you did not tell how will your 2 object will add, so we have to define a method for this and that method is __add__() magic method. 
 
 # >>S1={1,2,3}
 # >>S2={4,5,6}

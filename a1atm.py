@@ -3,7 +3,7 @@ class Atm:
     # __init__ :The constructor is a method that is called when an object is created. constructor run the code automatically when object create. and it is used to initialize the attributes of the class. 
     # In Python, the constructor is defined using the __init__() method. It takes self as the first parameter, which refers to the instance of the class being created. Additional parameters can be added to the constructor to accept values for initializing the object's attributes. 
     #? What is an Instance Variable in Python? 
-    # If the value of a variable varies from object to object, then such variables are called instance variables. For every object, a separate copy of the instance variable will be created. They are define inside the class consturctor using self. Instance variables are not shared by objects.
+    #~ If the value of a variable varies from object to object, then such variables are called instance variables. For every object, a separate copy of the instance variable will be created. They are define inside the class consturctor using self. Instance variables are not shared by objects.
     def __init__(self) -> None:
         #atributes
         self.__pin=""  #encapsulation (__variable)
@@ -76,7 +76,7 @@ class Atm:
             print("Invalid pin ")
 
 ## @Self 
-#~• Self is a reference variable that refers to the current instance of the class. It is used to access the attributes and methods of the class within its own methods. When you create an object of a class and call its methods, self allows you to refer to that specific object and its data.
+#~ Self is a reference variable that refers to the current instance of the class. It is used to access the attributes and methods of the class within its own methods. When you create an object of a class and call its methods, self allows you to refer to that specific object and its data.
 #56:00min Self
 
 # from a1atm import Atm 
