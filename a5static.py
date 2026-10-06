@@ -1,6 +1,6 @@
 class Atm:
 
-    #static/class varible
+    #static/class variable: 
     __counter = 1
 
 
@@ -18,7 +18,7 @@ class Atm:
         print(id(self))
         # self.__menu()
     
-    @staticmethod #@staticmethod: It's a special method which can be accessble without Object, generally it is use when we deal with static variable
+    @staticmethod # @staticmethod: It's a special method which can be accessble without Object, generally it is use when we deal with static variable
     def get_counter():
         return Atm.__counter
     
@@ -104,6 +104,7 @@ class Atm:
 
 
 
+# ================================================================================
 
 #~ A good explaination of Staticmethod
 # The `@staticmethod` decorator in Python is used to define a method in a class that doesn’t require access to the instance (`self`) or class (`cls`) objects. It essentially acts as a standalone function within the class, which can be useful for utility methods that logically belongs to the class but don’t operate on instance-specific data.

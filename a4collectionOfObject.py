@@ -1,3 +1,5 @@
+
+##~ Collection is a container data structure used to store, organise and manage multiple objects in the memory. In Python, we have several built-in collection types, including lists, tuples, dictionaries, and sets. These collections can hold objects of any type, including user-defined classes.
 class Customer:
     def __init__(self, name, age) -> None:
         self.name=name
