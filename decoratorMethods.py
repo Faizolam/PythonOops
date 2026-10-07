@@ -7,6 +7,7 @@
 # 3. Static Methods (@staticmethod) (Isolated helper tool that needs no user data)
 # ==============================================================================
 
+import code
 import json
 
 class UserProfile:
@@ -107,6 +108,70 @@ if __name__ == "__main__":
     print(f"Is 'super_secure_999' secure? -> {strong_check}")
     print("-" * 60)
 
+
+# ========================================================================================
+
+#* Here are the three most common real-world scenarios where you should use a @staticmethod, complete with code examples.
+
+# 1. Grouping Utility and Helper Functions
+# Use a static method when you have a function that performs a calculation or transformation closely related to a class, but it does not need to read or change any data inside the class.
+
+class TemperatureConverter:
+    # This does not need any class or instance data, just the input value
+    @staticmethod
+    def celsius_to_fahrenheit(celsius: float) -> float:
+        return (celsius * 9/5) + 32
+
+# Usage: Call it directly without creating an object
+fahrenheit = TemperatureConverter.celsius_to_fahrenheit(25.0)
+print(fahrenheit)  # Output: 77.0
+
+# 2. Form Validation and Data Sanitisation
+# Static methods are ideal for checking if data is valid before you attempt to process it or use it to create an object.
+
+import re
+
+class UserAccount:
+    def __init__(self, email: str):
+        self.email = email
+
+    # Pure utility logic to validate an email string
+    @staticmethod
+    def is_valid_email(email: str) -> bool:
+        pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+        return bool(re.match(pattern, email))
+
+# Usage: Validate input BEFORE creating a user object
+email_input = "test@example.com"
+
+if UserAccount.is_valid_email(email_input):
+    user = UserAccount(email_input)
+    print("User account created successfully!")
+else:
+    print("Invalid email provided.")
+
+
+# 3. Caching Constants or Static Configurations
+# If your class relies on complex, hardcoded rules or lookup logic that never changes based on the object instance, put it in a static method.
+class ShippingCalculator:
+    # A static lookup table that remains constant
+    @staticmethod
+    def get_rate_multiplier(zone: str) -> float:
+        rates = {
+            "domestic": 1.0,
+            "international": 2.5,
+            "express": 3.0
+        }
+        return rates.get(zone.lower(), 1.0)
+
+# Usage: Fetch the rate rule independently
+multiplier = ShippingCalculator.get_rate_multiplier("international")
+
+# If you can answer yes to both questions below, use a @staticmethod:
+# • Does this function belong logically inside this specific class?
+# • Does the function work entirely on its input arguments without typing self or cls?
+
+# =================================================================================================
 
 
 

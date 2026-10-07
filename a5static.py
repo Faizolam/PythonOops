@@ -1,3 +1,5 @@
+# Static/Class Variable: A variable which is same for every object of a class. It is also called class variable. It is declared inside the class but outside the constructor. It is accessed by using class name like ClassName.variableName.
+# ~Staticmethod: It's a special method which can be accessble without Object, generally it is use when we deal with static/class variable, and when it logically belongs to the class but does not need to access any instance-specific data. It is defined using the @staticmethod decorator.
 class Atm:
 
     #static/class variable: 
@@ -18,7 +20,7 @@ class Atm:
         print(id(self))
         # self.__menu()
     
-    @staticmethod # @staticmethod: It's a special method which can be accessble without Object, generally it is use when we deal with static variable
+    @staticmethod # @staticmethod: It's a special method which can be accessble without Object, generally it is use when we deal with static/class variable 
     def get_counter():
         return Atm.__counter
     
